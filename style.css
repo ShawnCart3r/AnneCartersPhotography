@@ -1,0 +1,39 @@
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center; 
+   color: yellow;
+}
+.s1 {
+    background: url('./images/test.jpg');
+    background-size:  cover;
+   
+}
+
+.s2 {
+    background: url('./images/test2.jpg');
+    background-size:  cover;
+   
+}
+
+.s3 {
+    background: url('./images/test3.jpg');
+    background-size:  cover;
+   
+}
+
+.s4 {
+    background: url('./images/test3.jpg');
+    background-size:  cover;
+   
+}
+
+.s5 {
+    background: url('./images/test3.jpg');
+    background-size:  cover;
+   
+}
+
+span  {
+    background: white !important;
+}
+
