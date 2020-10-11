@@ -11,9 +11,10 @@ new fullpage('#fullPage', {
 
 })
 
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+//modal
+let openModalButtons = document.querySelectorAll('[data-modal-target]')
+let closeModalButtons = document.querySelectorAll('[data-close-button]')
+let overlay = document.getElementById('overlay')
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -47,3 +48,4 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
