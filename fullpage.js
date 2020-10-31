@@ -2,7 +2,7 @@ new fullpage('#fullPage', {
     autoscrolling: true,
     navigation: true,
     anchors: ['section1', 'section2', 'section3','section4', 'section5'],
-    navigationTooltips: ['Home', 'About', 'Barns', 'Covered Bridges', 'Rock Art'],
+    navigationTooltips: ['Home', 'About', 'Barns', 'Covered Bridges', 'Rock Art', 'Purchase'],
     showActiveTooltip: true,
     scrollingSpeed: 1000,
     
@@ -11,7 +11,55 @@ new fullpage('#fullPage', {
 
 })
 
-//modal
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*modal
 let openModalButtons = document.querySelectorAll('[data-modal-target]')
 let closeModalButtons = document.querySelectorAll('[data-close-button]')
 let overlay = document.getElementById('overlay')
@@ -49,3 +97,4 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+*/

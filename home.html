@@ -12,199 +12,161 @@
 <body>
  
   <div id="fullPage"> 
-    <div class="section s1">
-    <h1> <strong>Anne Carter's Photography</strong> </h1>
+    <div style="text-align: center" class= "section s1">
+    <h1> <strong>Anne Carter Photography</strong> </h1>
+    
     </div>
     
   <div class="section s2">
-    <h1><strong>About</strong></h1>
+    <h2><strong>About</strong></h2>
+    <img src="./images/Anne.jpg" style="margin: auto; width: 50%; ">
     
   </div>
   <div class="section s3">
-    <h1><strong>Barns</strong></h1>
-    <button data-modal-target="#modal">Open Modal</button>
-  <div class="modal" id="modal">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
+    <h2><strong>Photos</strong></h2>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">Barns</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Rock Art</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Covered Bridges</button>
     </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
+    
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+      <h3>Barns</h3>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="overlay"></div>
-  <button data-modal-target="#modal">Open Modal</button>
-  <div class="modal" id="modal">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
+    
+    <div id="Paris" class="tabcontent">
+      <h3>Rock Art</h3>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="overlay"></div>
-  <button data-modal-target="#modal">Open Modal</button>
-  <div class="modal" id="modal">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
+    
+    <div id="Tokyo" class="tabcontent">
+      <h3>Cover Bridges</h3>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
       </div>
     </div>
+    
   </div>
-  <div id="overlay"></div>
-  </div>
+    
   
 <!-- modal1-->
 <div class="section s4">
-  <h1><strong>Covered Bridges</strong></h1>
-  <button data-modal-target="#modal1">Open Modal</button>
-  <div class="modal" id="modal1">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
-      </div>
-    </div>
-  </div>
-  <div id="overlay"></div>
-  <button data-modal-target="#modal1">Open Modal</button>
-  <div class="modal" id="modal1">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
-      </div>
-    </div>
-  </div>
-  <div id="overlay"></div>
-  <button data-modal-target="#modal1">Open Modal</button>
-  <div class="modal" id="modal1">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
-      </div>
-    </div>
-  </div>
-  <div id="overlay"></div>
+  
   
   
 </div>
 <!--modal2-->
 <div class="section s5">
-  <h1><strong>Rock Art</strong></h1>
-  <button data-modal-target="#modal2">Open Modal3</button>
-  <div class="modal" id="modal2">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
-      </div>
-    </div>
-  </div>
-  <div id="overlay"></div>
-  <button data-modal-target="#modal2">Open Modal3</button>
-  <div class="modal" id="modal2">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
-      </div>
-    </div>
-  </div>
-  <div id="overlay"></div>
-  <button data-modal-target="#modal2">Open Modal3</button>
-  <div class="modal" id="modal2">
-    <div class="modal-header">
-      <div class="title">Example Modal</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="column">
-        <img src="wedding.jpg">
-        <img src="rocks.jpg">
-        <img src="falls2.jpg">
-        <img src="paris.jpg">
-        <img src="nature.jpg">
-        <img src="mist.jpg">
-        <img src="paris.jpg">
-      </div>
-    </div>
-  </div>
-  <div id="overlay"></div>
- 
+  
+
+
+
 </div>
   
   
@@ -212,3 +174,22 @@
   <script src="fullpage.js"></script>
 </body>
 </html>
+
+
+ <!--<div class="modal-header">
+  <div class="title">Example Modal</div>
+  <button data-close-button class="close-button">&times;</button>
+</div>
+<div class="modal-body">
+  <div class="column">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+  </div>
+</div>
+</div>
+<div id="overlay"></div> -->
